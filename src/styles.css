@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Bubbleboddy';
+	font-weight: 400;
+	src: url('./assets/fonts/bubbleboddyneue-regular-trial.woff') format('woff'),
+		url('./assets/fonts/bubbleboddyneue-regular-trial.ttf') format('truetype')
+}
+@font-face {
+	font-family: 'Comfortaa';
+	font-weight: 400;
+	src: url('./assets/fonts/Comfortaa-Regular.woff') format('woff'),
+		url('./assets/fonts/Comfortaa-Regular.ttf') format('truetype')
+}
+@font-face {
+	font-family: 'Comfortaa';
+	font-weight: 700;
+	src: url('./assets/fonts/Comfortaa-Bold.woff') format('woff'),
+		url('./assets/fonts/Comfortaa-Regular.ttf') format('truetype')
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+	--color1: #F9D0A3;
+	--color2: #FDD90B;
+	--color3: #151217;
+	--color4: #DA001E;
+  }
+
+h1, h2, h3 {
+	font-family: 'Bubbleboddy';
+}
+
+p {
+    font-family: 'Comfortaa';
+	font-size: 1.4rem;
+}
+
+body {
+	background-color: var(--color4);
+}
+
+section {
+	background-color: var(--color1);
+}
