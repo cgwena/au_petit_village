@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
-export class HomeComponent {
+export class HomeComponent  {
+  products : any[] = []
+  constructor(private productsService: ProductsService) {}
+
+  ngOnInit(): void {
+    this.products = this.productsService.products
+}
 
 }
