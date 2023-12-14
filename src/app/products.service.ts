@@ -9,21 +9,27 @@ export class ProductsService {
       id: 1,
       name: 'Figurine Astérix',
       img: '../assets/pictures/figurine-asterix.jpeg',
-      description : 'Figurine en plastique de 11cm, peinte à la main',
+      description : 'Une figurine du célèbre gaulois !',
+      matiere: 'plastique',
+      dimensions: 'hauteur : 9cm',
       prix: '19€90'
     },
     {
       id:2,
       name: 'Figurine Obélix',
       img: '../assets/pictures/figurine-obelix.jpeg',
-      description : 'Figurine en plastique de 9cm, peinte à la main',
+      description : 'Obélix et son fidèle compagnon Idéfix',
+      matiere: 'plastique',
+      dimensions: 'hauteur : 11cm',
       prix: '24€90'
     },
     {
       id:3,
       name: 'Figurine Idéfix',
       img: '../assets/pictures/figurine-idefix.jpeg',
-      description : 'Figurine en résine de 8cm, peinte à la main',
+      description : "Le fidèle compagnon d'Astérix et Obélix",
+      matiere: 'résine',
+      dimensions: 'hauteur : 8cm',
       prix: '14€90'
     }
   ]

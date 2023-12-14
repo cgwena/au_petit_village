@@ -1,14 +1,19 @@
-<select name="prix" id="prix" [(ngModel)]="triPrix">
-    <option value="croissant">Trier par prix croissant</option>
-    <option value="decroissant">Trier par prix décroissant</option>
-</select>
 
-<input type="text" [(ngModel)]="rechercheNom">
-<div *ngIf="rechercheNom!==null" >
-    <div *ngFor="let product of products | sortByPrice:triPrix | filterByName:rechercheNom" >
-        <h3>{{ product.name }}</h3>
-        <img [src]="product.img" alt="">
-        <p>{{ product.prix }}</p>
-        <button (click)="showMoreDetails(product.id)">En savoir plus</button>
+    <select name="prix" id="prix" [(ngModel)]="triPrix">
+        <option value="croissant">Trier par prix croissant</option>
+        <option value="decroissant">Trier par prix décroissant</option>
+    </select>
+
+    <div id="search">
+        <p>Chercher un article</p>
+        <input type="search" [(ngModel)]="rechercheNom">
     </div>
-</div>
+
+    <div *ngIf="rechercheNom!==null">
+        <div class="card" *ngFor="let product of products | sortByPrice:triPrix | filterByName:rechercheNom">
+            <h2>{{ product.name }}</h2>
+            <img [src]="product.img" alt="">
+            <p>{{ product.prix }}</p>
+            <button (click)="showMoreDetails(product.id)">En savoir plus</button>
+        </div>
+    </div>

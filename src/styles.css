@@ -33,9 +33,21 @@ h1, h2, h3 {
 	font-family: 'Bubbleboddy';
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
 p {
     font-family: 'Comfortaa';
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 }
 
 body {
@@ -43,5 +55,7 @@ body {
 }
 
 section {
+    width: 100vw;
 	background-color: var(--color1);
+    padding: 15px;
 }

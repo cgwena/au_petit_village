@@ -1,0 +1,20 @@
+.main, .description, .technical-info {
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90vw;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 95%;
+    margin: 10px;
+    border-radius: 10px;
+}
