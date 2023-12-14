@@ -1,1 +1,4 @@
-<p>product-card works!</p>
+<div *ngFor="let product of products">
+    <h3>{{ product.name }}</h3>
+    <img src={{ product.img }} alt="">
+</div>
