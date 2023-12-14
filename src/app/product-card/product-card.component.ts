@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-product-card',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './product-card.component.css'
 })
 export class ProductCardComponent {
+  products : any[] = []
+  constructor(private productsService: ProductsService) {}
 
+  ngOnInit(): void {
+      this.products = this.productsService.products
+  }
 }
