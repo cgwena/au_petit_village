@@ -12,5 +12,9 @@ export class ProductCardComponent {
 
   ngOnInit(): void {
       this.products = this.productsService.products
+      this.triPrix = 'croissant'
   }
+
+  triPrix: string = 'Trier par'
+
 }

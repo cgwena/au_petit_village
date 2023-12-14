@@ -1,4 +1,10 @@
-<div *ngFor="let product of products">
+<select name="prix" id="prix" [(ngModel)]="triPrix">
+    <option value="croissant">Trier par prix croissant</option>
+    <option value="decroissant">Trier par prix décroissant</option>
+</select>
+
+<input type="text">
+<div *ngFor="let product of products | sortByPrice:triPrix">
     <h3>{{ product.name }}</h3>
     <img [src]="product.img" alt="">
     <p>{{ product.prix }}</p>
