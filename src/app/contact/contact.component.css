@@ -1,0 +1,22 @@
+div {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: var(--color2);
+    width: 25%;
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    border-radius: 5px;
+}
