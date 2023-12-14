@@ -1,0 +1,12 @@
+div {
+    height: 100px;
+    background-color: var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    padding: 5px;
+}
