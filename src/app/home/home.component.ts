@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
 
 @Component({
@@ -6,16 +6,21 @@ import { ProductsService } from '../products.service';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent  {
+export class HomeComponent implements OnInit {
   products : any[] = []
   constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
       this.products = this.productsService.products
-      this.triPrix = 'croissant'
+      console.log(this.products)
   }
 
-  triPrix: string = 'Trier par'
-  rechercheNom: string = ''
-
+  onSortingChange(): void {
+    // Code that might update the products array based on sorting change
+    console.log('Sorted products:', this.products); // Add this line
+  }
+  triPrix: string = 'croissant'
+  
 }
+
+
