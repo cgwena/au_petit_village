@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { SortByPricePipe } from './sort-by-price.pipe';
+import { FilterByNamePipe } from './filter-by-name.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProductCardComponent } from './product-card/product-card.component';
     HeaderComponent,
     HomeComponent,
     ProductComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    SortByPricePipe,
+    FilterByNamePipe
   ],
   imports: [
     BrowserModule,
