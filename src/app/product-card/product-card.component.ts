@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { ProductsService } from '../products.service';
   styleUrl: './product-card.component.css'
 })
 export class ProductCardComponent {
-  products : any[] = []
+  @Input() products : any[] = []
   constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
