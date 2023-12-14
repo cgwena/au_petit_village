@@ -20,3 +20,12 @@ form {
 input, textarea {
     border-radius: 5px;
 }
+
+input {
+    height: 2rem;
+}
+
+label, ::placeholder {
+    font-family: 'Comfortaa';
+    font-size: 1.5rem;
+}

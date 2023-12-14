@@ -1,6 +1,21 @@
 <section>
-    <h3>{{ product.name }}</h3>
-    <img [src]="product.img" alt="">
-    <p>{{ product.description }}</p>
-    <p>{{ product.prix }}</p>
+    <div class="main">
+        
+        <div class="main-info">
+            <h2>{{ product.name }}</h2>
+            <img [src]="product.img" alt="">
+            <p>{{ product.prix }}</p>
+        </div>
+    </div>
+    <div class="details">
+        <div class="description">
+            <h3>Description</h3>
+            <p>{{ product.description }}</p>
+        </div>
+        <div class="technical-info">
+            <h3>Fiche technique</h3>
+            <p>Matière: {{ product.matiere}}</p>
+            <p>Dimensions: {{ product.dimensions}}</p>
+        </div>
+    </div>
 </section>
