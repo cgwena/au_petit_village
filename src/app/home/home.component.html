@@ -1,1 +1,17 @@
-<p>home works!</p>
+<section>
+    <div>
+        <p>Au petit village est une entreprise fondée il y a 15 ans par 2 fans de BD et de figurines. </p>
+    </div>
+    <div>
+        <h2>Nos produits</h2><select name="prix" id="prix">
+            <option value="croissant">Trier par prix croissant</option>
+            <option value="decroissant">Trier par prix décroissant</option>
+        </select>
+    
+        <input type="text">
+        <div *ngFor="let product of products">
+            <app-product-card></app-product-card>
+        </div>
+        
+    </div>
+</section>
