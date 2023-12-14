@@ -15,6 +15,7 @@ export class ProductCardComponent {
       this.triPrix = 'croissant'
   }
 
-  triPrix: string = 'Trier par'
+  triPrix: string = 'croissant'
+  rechercheNom: string = ''
 
 }

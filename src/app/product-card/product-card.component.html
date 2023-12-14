@@ -3,9 +3,11 @@
     <option value="decroissant">Trier par prix décroissant</option>
 </select>
 
-<input type="text">
-<div *ngFor="let product of products | sortByPrice:triPrix">
-    <h3>{{ product.name }}</h3>
-    <img [src]="product.img" alt="">
-    <p>{{ product.prix }}</p>
+<input type="text" [(ngModel)]="rechercheNom">
+<div *ngIf="rechercheNom!==null" >
+    <div *ngFor="let product of products | sortByPrice:triPrix | filterByName:rechercheNom" >
+        <h3>{{ product.name }}</h3>
+        <img [src]="product.img" alt="">
+        <p>{{ product.prix }}</p>
+    </div>
 </div>
