@@ -31,6 +31,7 @@
 
 h1, h2, h3 {
 	font-family: 'Bubbleboddy';
+	margin-bottom: 10px;
 }
 
 h1 {
@@ -58,4 +59,22 @@ section {
     width: 100vw;
 	background-color: var(--color1);
     padding: 15px;
+}
+
+@media (min-width: 992px) {
+	h1 {
+		font-size: 3rem;
+	}
+	
+	h2 {
+		font-size: 1.8rem;
+	}
+	
+	h3 {
+		font-size: 1.6rem;
+	}
+	
+	p {
+		font-size: 1.2rem;
+	}
 }
