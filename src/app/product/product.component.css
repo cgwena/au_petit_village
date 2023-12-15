@@ -1,4 +1,4 @@
-.main, .description, .technical-info {
+.main-info, .description, .technical-info {
     background-color: white;
     margin: 15px;
     padding: 20px;
@@ -17,4 +17,24 @@ img {
     width: 95%;
     margin: 10px;
     border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+	.main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-info, .description, .technical-info {
+        background-color: white;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 30px;
+        width: 45vw;
+    }
+
+    img {
+        height: 300px;
+        width: auto;
+    }
 }
