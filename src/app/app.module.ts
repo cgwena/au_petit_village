@@ -10,7 +10,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
-import { ProductCardComponent } from './product-card/product-card.component';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { FilterByNamePipe } from './filter-by-name.pipe';
 
@@ -23,7 +22,6 @@ import { FilterByNamePipe } from './filter-by-name.pipe';
     HeaderComponent,
     HomeComponent,
     ProductComponent,
-    ProductCardComponent,
     SortByPricePipe,
     FilterByNamePipe
   ],

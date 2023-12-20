@@ -1,7 +1,7 @@
 <section>
-    <div>
-        <h2>Qui sommes-nous ?</h2>
-        <p>Au petit village est une entreprise fondée il y a 15 ans par 2 fans de BD et de figurines. </p>
-        <img src="assets/pictures/banquet.jpeg" alt="">
+    <div *ngFor="let info of infos">
+        <h2>{{ info.title }}</h2>
+        <p>{{ info.text }} </p>
+        <img [src]="info.img" [alt]="info.alt">
     </div>
 </section>

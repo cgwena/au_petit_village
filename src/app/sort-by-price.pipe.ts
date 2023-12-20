@@ -6,9 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SortByPricePipe implements PipeTransform {
   transform(products: any[], triPrix: string): any[] {
    
-    if (triPrix === 'croissant') {
+    if (triPrix === 'ascending') {
       products.sort((a, b) => a.prix > b.prix ? 1 : -1);
-    } else if (triPrix === 'decroissant') {
+    } else if (triPrix === 'descending') {
       products.sort((a, b) => a.prix < b.prix ? 1 : -1);
     }
 

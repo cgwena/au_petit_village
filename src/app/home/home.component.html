@@ -1,17 +1,31 @@
 <section>
-    <div class="titre">
-        <img src="assets/pictures/Logo_au petit village.jpg" alt="">
-        <h1>Au petit village</h1>
-    </div>
-    <img src="assets/pictures/banquet.jpeg" alt="">
-    <div>
-        <h2>Qui sommes-nous ?</h2>
-        <p>Au petit village est une entreprise fondée il y a 15 ans par 2 fans de BD et de figurines. </p>
-    </div>
-    <div>
-        <h2>Nos produits</h2>
-        <div>
-            <app-product-card [products]="products"></app-product-card>
+    <div class="title">
+        <div *ngFor="let info of infos">
+            <h2>{{ info.title }}</h2>
+            <img [src]="info.img" [alt]="info.alt">
+            <p>{{ info.text }} </p>
         </div>
     </div>
-</section>
+    <h2>Nos produits</h2>
+    <div>
+        <div class="sort">
+            <select name="price" id="price" [(ngModel)]="sortPrice">
+                <option value="ascending">Trier par prix croissant</option>
+                <option value="descending">Trier par prix décroissant</option>
+            </select>
+
+            <div id="search">
+                <p>Chercher un article</p>
+                <input type="search" [(ngModel)]="nameSearch">
+            </div>
+        </div>
+
+        <div class="catalogue" *ngIf="nameSearch!==null">
+            <div class="card" *ngFor="let product of products | sortByPrice:sortPrice | filterByName:nameSearch">
+                <h2>{{ product.name }}</h2>
+                <img [src]="product.img" [alt]="product.alt">
+                <p>{{ product.price }}</p>
+                <button (click)="showMoreDetails(product.id)">En savoir plus</button>
+            </div>
+        </div>
+    </div>
