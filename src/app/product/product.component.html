@@ -2,8 +2,8 @@
     <div class="main">
         <div class="main-info">
             <h2>{{ product.name }}</h2>
-            <img [src]="product.img" alt="">
-            <p>{{ product.prix }}</p>
+            <img [src]="product.img" [alt]="product.alt">
+            <p>{{ product.price }}</p>
         </div>
         <div class="details">
             <div class="description">
@@ -12,7 +12,9 @@
             </div>
             <div class="technical-info">
                 <h3>Fiche technique</h3>
-                <p>Matière: {{ product.matiere}}</p>
+                <p>Matière: {{ product.material}}</p>
                 <p>Dimensions: {{ product.dimensions}}</p>
             </div>
         </div>
+    </div>
+</section>

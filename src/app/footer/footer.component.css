@@ -1,5 +1,5 @@
 div {
-    height: 100px;
+    height: 10vh;
     background-color: var(--color4);
     display: flex;
     justify-content: center;
@@ -9,4 +9,9 @@ div {
 img {
     height: 50px;
     padding: 5px;
+    color: var(--color3);
+}
+
+img:hover {
+    opacity: 0.5;
 }

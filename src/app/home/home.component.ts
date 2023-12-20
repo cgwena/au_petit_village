@@ -1,26 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
+import { Router } from '@angular/router';
+import { AboutService } from '../about.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
+
+
 export class HomeComponent implements OnInit {
   products : any[] = []
-  constructor(private productsService: ProductsService) {}
+  infos : any[] = []
+  constructor(private productsService: ProductsService, private aboutService : AboutService, private router : Router) {}
 
   ngOnInit(): void {
       this.products = this.productsService.products
-      console.log(this.products)
+      this.infos = this.aboutService.infos
+      this.sortPrice = 'ascending'
   }
 
-  onSortingChange(): void {
-    // Code that might update the products array based on sorting change
-    console.log('Sorted products:', this.products); // Add this line
+  showMoreDetails(productId: number):void {
+    this.router.navigate(['/product', productId])
   }
-  triPrix: string = 'croissant'
-  
+  sortPrice: string = 'descending'
+  nameSearch: string = ''
 }
 
 
