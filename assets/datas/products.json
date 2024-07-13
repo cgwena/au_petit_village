@@ -1,0 +1,33 @@
+[
+      {
+        "id": 1,
+        "name": "Figurine Astérix",
+        "img": "../assets/pictures/figurine-asterix.jpeg",
+        "alt": "Une figurine en plastique d'Astérix",
+        "description" : "Une figurine du célèbre gaulois !",
+        "material": "plastique",
+        "dimensions": "hauteur : 9cm",
+        "price": "19.90"
+      },
+      {
+        "id":2,
+        "name": "Figurine Obélix",
+        "img": "../assets/pictures/figurine-obelix.jpeg",
+        "alt": "Une figurine en plastique d'Obélix",
+        "description" : "Obélix et son fidèle compagnon Idéfix",
+        "material": "plastique",
+        "dimensions": "hauteur : 11cm",
+        "price": "24.90"
+      },
+      {
+        "id":3,
+        "name": "Figurine Idéfix",
+        "img": "../assets/pictures/figurine-idefix.jpeg",
+        "alt": "Une figurine en plastique d'Idéfix",
+        "description" : "Le fidèle compagnon d'Astérix et Obélix",
+        "material": "résine",
+        "dimensions": "hauteur : 8cm",
+        "price": "14.90"
+      }
+]
+    
