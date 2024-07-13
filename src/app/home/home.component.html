@@ -24,7 +24,7 @@
             <div class="card" *ngFor="let product of products | sortByPrice:sortPrice | filterByName:nameSearch">
                 <h2>{{ product.name }}</h2>
                 <img [src]="product.img" [alt]="product.alt">
-                <p>{{ product.price }}</p>
+                <p>{{ product.price }} €</p>
                 <button (click)="showMoreDetails(product.id)">En savoir plus</button>
             </div>
         </div>
